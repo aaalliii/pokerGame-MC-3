@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class Deck {
-    public final String[] cardNames = new String[]{"1", "2", "3", "4", "5", "6", "7", "8", "9", "X", "J", "Q", "K", "A"};
+    public final String[] cardNames = new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9", "X", "J", "Q", "K", "A"};
     public List<Card> cards = new ArrayList<>();
 
     public Deck() {

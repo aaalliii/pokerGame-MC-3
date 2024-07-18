@@ -8,6 +8,7 @@ public class Card {
         this.cardName = cardName;
         this.cardSuit = cardSuit;
     }
+
     @Override
     public String toString(){
         return "\n＿＿＿\n|    |\n| " + cardName + cardSuit + " |\n|    |\n‾‾‾‾‾\n";
