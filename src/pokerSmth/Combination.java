@@ -8,5 +8,6 @@ public enum Combination {
     STRAIGHT,
     THREE_OF_A_KIND,
     TWO_PAIR,
+    PAIR,
     HIGH_CARD,
 }
