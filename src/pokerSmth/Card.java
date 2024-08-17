@@ -11,9 +11,10 @@ public class Card {
 
     @Override
     public String toString(){
-        if(cardName == "10"){
-            return "\n＿＿＿\n|    |\n|" + cardName + " " + cardSuit.symbol + "|\n|    |\n‾‾‾‾‾";
-        }
-        return "\n＿＿＿\n|    |\n| " + cardName + " " + cardSuit.symbol + "|\n|    |\n‾‾‾‾‾";
+//        if(cardName == "10"){
+//            return "\n＿＿＿\n|    |\n|" + cardName + " " + cardSuit.symbol + "|\n|    |\n‾‾‾‾‾";
+//        }
+//        return "\n＿＿＿\n|    |\n| " + cardName + " " + cardSuit.symbol + "|\n|    |\n‾‾‾‾‾";
+        return cardName + cardSuit;
     }
 }
