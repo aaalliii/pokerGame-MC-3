@@ -1,13 +1,13 @@
 package pokerSmth;
 
 public enum Combination {
-    STRAIGHT_FLUSH,
-    FOUR_OF_A_KIND,
-    FULL_HOUSE,
-    FLUSH,
-    STRAIGHT,
-    THREE_OF_A_KIND,
-    TWO_PAIR,
-    PAIR,
     HIGH_CARD,
+    PAIR,
+    TWO_PAIR,
+    THREE_OF_A_KIND,
+    STRAIGHT,
+    FLUSH,
+    FULL_HOUSE,
+    FOUR_OF_A_KIND,
+    STRAIGHT_FLUSH
 }
