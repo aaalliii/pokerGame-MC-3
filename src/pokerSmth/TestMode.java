@@ -17,22 +17,22 @@ public class TestMode {
         List<Card> player1Cards = new ArrayList<>();
         List<Card> player2Cards = new ArrayList<>();
 
-        System.out.println("#  Write like in this example \n" +
+        System.out.println("#  Write like in this example\n" +
                 "#\n" +
-                "#  table cards? \n" +
-                "#  1 d \n" +
-                "#  10 h \n" +
-                "#  Q h \n" +
-                "#  5 d \n" +
-                "#  2 s \n" +
+                "#  table cards?\n" +
+                "#  1 d\n" +
+                "#  10 h\n" +
+                "#  Q h\n" +
+                "#  5 d\n" +
+                "#  2 s\n" +
                 "#\n" +
-                "#  p1 cards? \n" +
-                "#  8 d \n" +
-                "#  8 c \n" +
+                "#  p1 cards?\n" +
+                "#  8 d\n" +
+                "#  8 c\n" +
                 "#\n" +
-                "#  p2 cards? \n" +
-                "#  4 h \n" +
-                "#  5 h \n");
+                "#  p2 cards?\n" +
+                "#  4 h\n" +
+                "#  5 h\n");
 
         System.out.println("table cards?");
         for (int i = 0; i < 5; i++) {
@@ -74,14 +74,14 @@ public class TestMode {
                 Card card = parseCard(input);
 
                 if (uniqueCards.contains(card)) {
-                    System.out.println("duplicate card at " + card);
+                    System.out.println("duplicate card at \n" + card);
                     continue;
                 }
 
                 uniqueCards.add(card);
                 return card;
             } catch (IllegalArgumentException e) {
-                System.out.println("incorrect input at " + e);
+                System.out.println("incorrect input at \n" + e);
             }
         }
     }
@@ -89,17 +89,17 @@ public class TestMode {
     private static Card parseCard(String input) {
         String[] parts = input.split(" ");
         if (parts.length != 2) {
-            throw new IllegalArgumentException("invalid format");
+            throw new IllegalArgumentException("invalid format at \n" + input);
         }
         String cardName = parts[0];
         String cardSuit = parts[1];
 
         if (!VALID_VALUES.contains(cardName)) {
-            throw new IllegalArgumentException("invalid name at " + cardName);
+            throw new IllegalArgumentException("invalid name at \n" + cardName);
         }
 
         if (!VALID_SUITS.contains(cardSuit)) {
-            throw new IllegalArgumentException("invalid suit at " + cardSuit);
+            throw new IllegalArgumentException("invalid suit at \n" + cardSuit);
         }
 
         Suit suit = Suit.fromString(cardSuit);
