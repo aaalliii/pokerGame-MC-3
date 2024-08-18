@@ -74,7 +74,7 @@ public class TestMode {
                 Card card = parseCard(input);
 
                 if (uniqueCards.contains(card)) {
-                    System.out.println("duplicate card at \n" + card);
+                    System.out.println("duplicate card at \n" + input);
                     continue;
                 }
 
